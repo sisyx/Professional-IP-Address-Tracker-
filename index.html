@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <img src="./images/pattern-bg-desktop.png" alt="" class="bg-pattern-img">
+            <h1>IP Adress Tracker</h1>
+            <label for="ip input">
+                <input type="text" placeholder="Search for any IP address" name="ip input">
+                <div class="go-btn">
+                    <img src="./images/icon-arrow.svg" alt=">">
+                </div>
+            </label>
+
+            <div class="info-from-ip--container">
+                <div class="ip-info ip-info--adress">
+                    <div class="ip-info--title ip-info--adress--title">IP ADRESS</div>
+                    <div class="ip-info--result ip-info--adress--result">
+                        <p class="ip-info--adress--result-text">unknown</p>
+                    </div>
+                </div>
+                <div class="ip-info ip-info--location">
+                    <div class="ip-info--title ip-info--location--title">LOCATION</div>
+                    <div class="ip-info--result ip-info--location--result">
+                        <p class="ip-info--location--result-text">unknown</p>
+                    </div>
+                </div>
+                <div class="ip-info ip-info--timezone">
+                    <div class="ip-info--title ip-info--timezone--title">TIME ZONE</div>
+                    <div class="ip-info--result ip-info--timezone--result">
+                        <p class="ip-info--timezone--result-text">unknown</p>
+                    </div>
+                </div>
+                <div class="ip-info ip-info--isp">
+                    <div class="ip-info--title ip-info--isp--title">ISP</div>
+                    <div class="ip-info--result ip-info--isp--result">
+                        <p class="ip-info--isp--result-text">unknown</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mapid"></div>
+    </div>
+
+    <div class="popup-blur-bg"></div>
+
+    <div class="access_key-popup-container">
+        <label for="acces key" class="popup-label">
+            <input type="password" placeholder="Please Enter Access Key">
+            <p class="access_key-popup-text">You need an access key from <a href="https://ipify.com">ipify.com</a>.</p>
+        </label>
+        <div class="popup-control">
+            <button class="popup-ok-btn">OK</button>
+            <button class="popup-close-btn">Close</button>
+        </div>
+    </div>
+    
+    <script  src="./scripts/ip.js"></script>
+    <script src="./scripts/map.js"></script>
+</body>
+</html>

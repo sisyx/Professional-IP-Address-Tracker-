@@ -1,0 +1,104 @@
+@media (max-width: 1000px) {
+    .header {
+        height: 270px;
+    }
+}
+@media (max-width: 850px) {
+    .info-from-ip--container {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        height: 200px;
+        width: 80vw;
+        column-gap: 25px;
+        row-gap: 10px;
+        margin-bottom: -150px;
+    }
+    .ip-info {
+        /* border-top: 1px var(--dard-grey) solid; */
+        border-left: none;
+    }
+}
+@media (max-width: 750px) {
+    .access_key-popup-container {
+        width: 600px;
+    }
+    .popup-label input {
+        width: 300px;
+    }
+}
+@media (max-width: 650px) {
+    .access_key-popup-container {
+        width: 500px;
+    }
+}
+@media (max-width: 570px) {
+    label {
+        width: 95vw;
+    }
+    input {
+        width: 70vw;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .go-btn {
+        width: 30px;
+    }
+    .access_key-popup-container {
+        width: 400px;
+    }
+    .popup-label {
+        width: 100%;
+    }
+    .popup-label input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 475px) {
+    .access_key-popup-container {
+        width: 90vw;
+    }
+    .popup-label {
+        width: 100%;
+    }
+    .popup-label input {
+        width: 150px;
+    }
+    .access_key-popup-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .info-from-ip--container {
+        background-color: none;
+        background: linear-gradient(white,white,  rgba(255,255,255, 0.7), rgba(255,255,255, 0.4));
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 5px;
+
+        height: 250px;
+        width: 90vw;
+
+        padding: 30px 3px;
+        margin-bottom: -200px;
+    }
+    .ip-info * {
+        display: flex;
+        justify-content: center;
+    }
+    .ip-info--title {
+        width: unset;
+        
+    }
+    .ip-info--result {
+        padding-top: 0;
+        align-items: baseline;
+        min-height: 20px;
+    }
+}

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Rubik', sans-serif, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;
+    transition: all 150ms;
+}
+:root {
+    --very-dark-grey: hsl(0, 0%, 17%);
+    --dard-grey: hsl(0, 0%, 59%);
+}
+body {
+    padding-top: 0;
+}
+h1 {
+    font-size: 2rem;
+}
