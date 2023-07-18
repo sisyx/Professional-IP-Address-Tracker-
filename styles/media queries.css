@@ -88,17 +88,22 @@
         padding: 30px 3px;
         margin-bottom: -200px;
     }
+    .ip-info {
+        align-items: center;
+    }
     .ip-info * {
         display: flex;
         justify-content: center;
+        text-align: center;
     }
-    .ip-info--title {
+    /* .ip-info--title {
         width: unset;
         
-    }
+    } */
     .ip-info--result {
         padding-top: 0;
         align-items: baseline;
+        justify-content: center;
         min-height: 20px;
     }
 }
