@@ -1,4 +1,4 @@
-# Professional-IP-Adress-Tracker-
+# Professional-IP-Adress-Tracker
 <h1>What this website does</h1>
 <p>This website is an IP Address Tracker. You enter an IP Address and all the information about it will be given to you in just a second</p>
 <h1>Usage</h1>
